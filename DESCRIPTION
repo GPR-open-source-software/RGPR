@@ -22,8 +22,12 @@ BugReports: https://github.com/emanuelhuber/RGPR/issues
 LazyData: true
 Collate:
 	'RGPR.R'
-	'global.R'    
+	'generic.R' 
+	'functions.R'
+	'ClassGPRvirtual.R'   
 	'ClassGPR.R'
+	'ClassGPRstack.R'
+	'ClassGPRcube.R'
     'ClassGPRsurvey.R'
     'ClassMisc.R'
     'data.R'

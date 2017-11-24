@@ -41,6 +41,8 @@ time zero (time zero of the data can be modified with the function)
 When \code{keep = NULL} the amount of time kept is equal to
 time taken by the air wave to travel from the transmitter to the
 receiver.
+
+WARNING: this function uses \code{upsample} in traceshift!!
 }
 \examples{
 data(frenkeLine00)

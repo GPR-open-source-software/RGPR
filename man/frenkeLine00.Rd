@@ -4,7 +4,7 @@
 \name{frenkeLine00}
 \alias{frenkeLine00}
 \title{Ground-penetrating radar data.}
-\format{An object of the class RGPR}
+\format{An object of the class \code{GPR}}
 \source{
 University of Basel (Switzerland)
 }
