@@ -66,7 +66,6 @@ setClass(
   Class = "GPRcube",
   contains = "GPRstack",
   slots = c(
-    #data         = "array",      # one column per trace
     y            = "numeric",    # y-position
     dy           = "numeric"    # spatial trace sampling
   )

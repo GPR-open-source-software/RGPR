@@ -217,10 +217,6 @@ setGenericVerif("values", function(x) standardGeneric("values"))
 #' @export
 setGenericVerif("values<-", function(x,value) standardGeneric("values<-"))
 
-#' @name processing
-#' @rdname processing
-#' @export
-setGenericVerif("processing", function(x) standardGeneric("processing"))
 
 #' @name proc
 #' @rdname proc

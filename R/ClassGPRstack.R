@@ -85,8 +85,8 @@ setMethod(f = "stack", signature = "GPR", definition = function(x, ...){
   y <- new("GPRstack",
             version      = x@version,
             data         = newData,
-            z            = x@depth,
-            x            = x@pos,
+            z            = x@z,
+            x            = x@x,
             time0        = x@time0,
             time         = x@time,
             fid          = x@fid,
@@ -102,8 +102,8 @@ setMethod(f = "stack", signature = "GPR", definition = function(x, ...){
             name         = x@name,
             description  = x@description,
             filepath     = x@filepath,
-            zunit        = x@depthunit,
-            xunit        = x@posunit,
+            zunit        = x@zunit,
+            xunit        = x@xunit,
             surveymode   = x@surveymode,
             date         = x@date,
             crs          = x@crs,
@@ -116,6 +116,17 @@ setMethod(f = "stack", signature = "GPR", definition = function(x, ...){
 })    
     
     
+#' Length of an object of the class \code{GPR}
+#'
+#' The length of an object of the class \code{GPR} is equal to the number of
+#' traces.
+#' @examples
+#' data(frenkeLine00)
+#' length(frenkeLine00)
+#' @export
+setMethod(f = "length", signature(x = "GPRstack"), definition = function(x){
+  return( prod(dim(x@data)[2:3]) )
+})
     
     
     
