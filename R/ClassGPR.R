@@ -3011,7 +3011,7 @@ setMethod("NMOCor", "GPR", function(x, v = NULL, asep = NULL){
 
 semblance <- function(x){
   S <- sum((apply(x, 1, sum, na.rm = TRUE))^2) /
-    sum(apply((x)^2, 1, sum, na.rm = TRUE)) * nrow(x)
+    (sum(apply((x)^2, 1, sum, na.rm = TRUE)) * length(x))
   return(S)
 }
 
